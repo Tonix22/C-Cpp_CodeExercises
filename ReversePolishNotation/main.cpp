@@ -10,47 +10,6 @@ typedef struct Element
     string val;
 }Node;
 
-/*
-int evalRPN(vector<string> &A)
-{
-    int index = A.size()-1;
-
-    stack<Node* > Deep_nodes;
-    Node* symbol = (Node*)malloc(sizeof(Node));
-    Node* temp;
-
-    vector<string>::reverse_iterator it = A.rbegin();
-    cout<<*it;
-
-    string abc = (*it);
-
-    symbol->val = abc;
-    Deep_nodes.push(symbol);
-
-    index--;
-    while(index!=0)
-    {
-        abc = A[index];
-        if(0 == strtol ((abc).c_str(),NULL,10)) // return 0 if there is a symbol
-        {
-            temp = (Node*)malloc(sizeof(Node));
-            temp->val = abc;
-            Deep_nodes.top()->R = temp;
-            Deep_nodes.push(temp);
-        }
-        else
-        {
-            temp = (Node*)malloc(sizeof(Node));
-            temp->val = abc;
-            Deep_nodes.top()->L = temp;
-            Deep_nodes.pop();
-        }
-        index--;
-    }
-    return 0;
-}
-*/
-
 int str_math(int A_int,int B_int, string OP)
 {
     int res = 0;

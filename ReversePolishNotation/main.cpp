@@ -3,12 +3,6 @@
 #include <string>
 #include <stack>
 using namespace std;
-typedef struct Element
-{
-    struct Element* R = NULL;
-    struct Element* L = NULL;
-    string val;
-}Node;
 
 int str_math(int A_int,int B_int, string OP)
 {
